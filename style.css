@@ -11,6 +11,8 @@ body {
     max-width:75vh;
 }
 
+audio {display: none;}
+
 .container {
     display: grid;
     grid-template-columns: 5vh 20vh 20vh 20vh 5vh;

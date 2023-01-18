@@ -19,6 +19,11 @@ let playerLetter = ""
 			oButton = document.getElementById("O");
 			videoItem = document.querySelector("video")
 			winInfoArea = document.getElementById("winInfoArea");
+			playMusic = document.getElementById("playMusic");
+			playMusic.addEventListener('click', () => {
+				document.querySelector('audio').play();
+			});
+			
 
 
 			// tiles
@@ -32,6 +37,8 @@ let playerLetter = ""
 
 
 		}
+
+		
 
 	
 

@@ -5,6 +5,12 @@ body {
     height: 100vh;
 }
 
+.tutorialVideo {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    max-width:75vh;
+}
+
 .container {
     display: grid;
     grid-template-columns: 5vh 20vh 20vh 20vh 5vh;

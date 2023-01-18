@@ -17,6 +17,7 @@ let playerLetter = ""
 			resetButton=document.getElementById("reset");
 			resetButton.addEventListener("click", reset);
 			oButton = document.getElementById("O");
+			videoItem = document.querySelector("video")
 			winInfoArea = document.getElementById("winInfoArea");
 
 
@@ -31,6 +32,8 @@ let playerLetter = ""
 
 
 		}
+
+	
 
 		function handleWin(message) {
 			winInfoArea.innerText = `${message} \nPress restart to play again!`
@@ -56,6 +59,7 @@ let playerLetter = ""
 				playerTurn = false;
 				handleCPUMove();
 			}
+			videoItem.style.display="none"
 			startMenu.style.display = "none";
 			board.style.display = "grid";
 		}
